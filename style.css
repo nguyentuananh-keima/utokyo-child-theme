@@ -1,0 +1,181 @@
+/*!
+Theme Name: Divi Child
+Theme URI: https://www.g-1.ne.jp/
+Version: 1.0.0
+Description: This is sub theme of Elegant (Divi).
+Author: Elegant Sub Themes
+Author URI: https://www.g-1.ne.jp/
+Template: Divi
+License:
+License URI:
+*/
+
+/*
+If you wanna set default title style, Please activate this style.
+@import url('style--title.css');
+*/
+
+@media (max-width: 980px) {
+  .pa-open-mobile-menu .et_pb_menu__menu {
+    display: flex !important;
+  }
+  .pa-open-mobile-menu .et_pb_menu__wrap {
+    justify-content: flex-start;
+  }
+  .pa-open-mobile-menu .et_mobile_nav_menu {
+    display: none !important;
+  }
+}
+
+.newsletter_required{
+	margin:20px 0;
+}
+
+.newsletter_required_mark{
+	font-weight:bold;
+}
+
+
+/*700px以上*/
+ @media screen and (min-width: 700px) {
+	 .newsletter_form_unsubsc_wrap{
+		display:flex;
+		max-width:600px;
+		margin:0 auto;
+	}
+}
+
+/* エラーメッセージ左寄せ */
+.newsletter_form_unsubsc_wrap1{
+		text-align:left;
+}
+	 
+input .newsletter_form, input .newsletter_form_unsubsc {
+  -webkit-appearance: none;
+}
+
+.newsletter_form{ 
+	font-size:16px;
+	width:95%;
+	height:40px;
+}
+
+.newsletter_form_unsubsc {
+	font-size:16px;
+	width:400px;
+	height:40px;
+}
+
+/*700px以下*/
+ @media screen and (max-width: 700px) {
+.newsletter_form_unsubsc {
+	width:300px;
+}
+  }
+
+.newsletter_form::placeholder{ 
+	color:#bfbfbf;
+}
+
+.newsletter_unsubsc_submit{
+	background-color:#277ebb;
+	color:#ffffff;
+	padding:5px 30px;
+	border:none;
+	font-size:20px;
+	height:40px;
+	width:180px;
+}
+
+ /*700px以下*/
+ @media screen and (max-width: 700px) {
+.newsletter_unsubsc_submit{
+	margin-top:30px;
+}
+  }
+
+/* ラジオボタンを隠す */
+.radio-btns input[type=radio].newsletter_radio{
+  display: none;
+}
+.radio-btns label {
+  display: inline-block;
+	margin:8px 0;
+}
+
+
+
+/* spanの左側にボタンを配置するスペースを作る */
+.radio-btns .newsletter_radio + span {
+  padding-left: 2em;
+  display: inline-block;
+  position: relative;
+}
+
+/* 各パーツを作成 */
+.radio-btns .newsletter_radio + span::after,
+.radio-btns .newsletter_radio + span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 1px solid #AAAAAA;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: 0;
+}
+
+/* after上書き */
+.radio-btns .newsletter_radio + span::after{
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  top: 5px;
+  left: 3px;
+  border: none;
+  background: #f18800;
+}
+
+/*
+  checked状態
+  文字のcolorとボタンのopacityを変更
+*/
+.radio-btns .newsletter_radio:checked + span {
+  color: #f18800;
+}
+
+.radio-btns .newsletter_radio:checked + span::after {
+  opacity: 1;
+}
+
+.newsletter_ppolicy{
+	margin-top:30px;
+	text-align:center;
+}
+
+.newsletter_ppolicy:hover{
+	opacity:0.5;
+}
+
+.newsletter_register{
+	text-align:center;
+}
+
+.newsletter_reginster_submit{
+	background-color:#277ebb;
+	color:#ffffff;
+	margin:30px auto;
+	padding:5px 30px;
+	border:none;
+	font-size:22px;
+	height:50px;
+	width:280px;
+}
+
+.newsletter_reginster_submit:hover, .newsletter_unsubsc_submit:hover{
+	opacity:0.5;
+}
+
+
+
