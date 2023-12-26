@@ -1,0 +1,49 @@
+:root {
+  --color--site-green: #26b7b9;
+  --color--site-blue: #209cd8;
+  --color--site-green-blue: #42bdd5;
+  --color--site-navy: #00437e;
+  --color--site-orange: #eb6112;
+  --color--site-yellow: #fff100;
+  --color--site-gray: #888888;
+  --color--site-black: #333333;
+  
+  --color--site-green--bg: #eaf5f4;
+  --color--site-blue--bg: #e9f3f7;
+  --color--site-green-blue--bg: #eaf5f7;
+  --color--site-navy--bg: #eaeef2;
+  --color--site-orange--bg: #fdefeb;
+  --color--site-yellow--bg: #fbfbec;
+  --color--site-gray--bg: #efefef;
+  
+  --color-primary: var(--color--site-green);
+  --color-secondary: var(--color--site-blue);
+  --color-tertiary: var(--color--site-navy);
+  --color-attention: var(--color--site-orange);
+  
+  --radius-base: 2px;
+}
+
+.styled h1 {
+
+}
+.styled h2 {
+  padding: .25em .75em;
+  background: linear-gradient(60deg, var(--color-primary), var(--color-secondary));
+  border-radius: var(--radius-base);
+  color: #fff;
+}
+.styled h3 {
+  padding: .25em .75em;
+  border-top: 2px solid var(--color-primary);
+  border-bottom: 2px solid var(--color-primary);
+}
+.styled h4 {
+
+}
+.styled h5 {
+
+}
+.styled h6 {
+
+}
